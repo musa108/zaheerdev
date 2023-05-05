@@ -1,0 +1,129 @@
+/* navbar */
+.RootLayout header nav {
+  @apply flex p-[1.25rem] lg:mx-[1.25rem] lg:gap-[40rem] items-center font-[sans-serif];
+}
+/* nav logo */
+.RootLayout header nav h1 {
+  @apply text-[2rem] text-[#df7a7a] font-[500];
+}
+.RootLayout header nav h1 span {
+  @apply text-[#537fe7];
+}
+header nav a {
+  @apply p-[0.65rem] rounded-[0.25rem] transition duration-300;
+}
+header nav a.active {
+  @apply bg-[#537fe7] text-[#fff];
+}
+/* nav links */
+.RootLayout ul {
+  @apply max-md:hidden flex gap-[3.65rem] ml-[auto];
+}
+.RootLayout ul li {
+  @apply text-[#537fe7] text-[1.24rem];
+}
+/* mobile nav */
+.RootLayout header nav .mobile-icon {
+  @apply hidden text-[#537fe7] max-md:block ml-[auto];
+}
+.RootLayout .mobile-menu ul {
+  @apply md:hidden block bg-[#c0eef2] font-bold space-y-2 mx-5 transition duration-300 p-2;
+}
+.RootLayout .mobile-menu ul li {
+  @apply hover:text-[#fff];
+}
+
+/* home page */
+.Homepage div {
+  @apply flex flex-col items-center justify-center mt-[2rem] font-[inter];
+}
+.Homepage div h1 {
+  @apply lg:text-[4.56rem] font-[600] text-[#df7a7a] max-md:text-[3.85rem];
+}
+.Homepage div h3 {
+  @apply lg:text-[3.25rem] max-md:text-[2.56rem] font-[400] text-[#537fe7] text-center;
+}
+.Homepage div p {
+  @apply lg:text-[2.5rem] max-md:text-[1.85rem] font-[300] text-[#df7a7a] text-center;
+}
+.Homepage .btns {
+  @apply lg:flex lg:flex-row lg:gap-[3rem] gap-[1.25rem]; 
+}
+.Homepage .btns button {
+  @apply p-3 bg-[#fff] text-[#18122b] hover:bg-[#537fe7] hover:text-[#fff] w-[120px] rounded-md text-[1.25rem];
+}
+/* about  section*/
+.Homepage .about h1,.Homepage .skill h1 {
+  @apply text-center text-[#537fe7] text-[2rem];
+}
+.Homepage .about p {
+  @apply text-center text-[1.25rem] lg:text-[1.5rem] font-serif text-[#fff] lg:w-[800px] max-md:w-[300px];
+}
+/* skill section */
+.Homepage .skill .icon{
+  @apply grid lg:grid-cols-6 grid-cols-2 text-center place-items-center
+}
+.Homepage .skill img{
+  @apply lg:w-[100px] lg:h-[80px] w-[50px] h-[50px]
+}
+/* footer */
+.Homepage footer {
+  @apply  rounded-b-lg
+}
+.Homepage footer .Social-icon {
+  @apply flex flex-row gap-[2rem] animate-bounce;
+}
+.fa {
+  @apply p-[1.25rem] w-[3.125rem] font-[1.875rem] text-center;
+}
+.fa-twitter,
+.fa-linkedin,
+.fa-github {
+  @apply text-[#df7a7a] w-[3.125rem];
+}
+.Homepage footer p{
+  @apply text-center text-[#537fe7] text-[20px]
+}
+/* Project */
+.Project {
+  @apply flex flex-wrap gap-3 justify-center p-3;
+}
+.Data {
+  @apply w-[400px] bg-[#635985] flex flex-col items-center p-4  rounded-md;
+}
+.Data img {
+  @apply w-[350px];
+}
+.Data p {
+  @apply text-[1.25rem] text-[#df7a7a] font-sans font-[500];
+}
+.Data a {
+  @apply text-[#537fe7];
+}
+/* error page */
+.ErrorPage {
+  @apply text-center mt-[3.65rem] text-[2rem] text-[#df7a7a];
+}
+.ErrorPage a span {
+  @apply text-[#537fe7];
+}
+/* contact */
+.Contact {
+  @apply flex flex-col justify-center items-center;
+}
+.Contact h1 {
+  @apply text-[#df7a7a] text-[2rem];
+}
+.Contact form {
+  @apply flex flex-col justify-center  gap-[1rem];
+}
+.Contact form label {
+  @apply text-[1.25rem] text-[#537fe7];
+}
+.Contact form input,
+.Contact form textarea {
+  @apply w-[300px] h-[40px];
+}
+.Contact form .btn {
+  @apply w-[300px] h-[30px] bg-[#df7a7a] text-[#18122b] font-[600] hover:text-[#fff] rounded-md hover:bg-[#537fe7] transition duration-100;
+}
